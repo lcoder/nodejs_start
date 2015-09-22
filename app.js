@@ -1,18 +1,15 @@
 
 
-var fs = require("fs");
+var EventEmitter = require("events").EventEmitter ;
+var event = new EventEmitter();
 
 
-var success = function(err,data){
-    if( err ){
-        console.log(err);
-    }else {
-        console.log( data );
-    }
-};
+event.on("some_event",function(){
+    console.log( "some_event发生了" );
+});
 
-var data = fs.readFileSync("index.txt",'utf-8');
 
-console.log( data );
 
-console.log("end");
+setTimeout(function(){
+    event.emit("some_event");
+},1000);
