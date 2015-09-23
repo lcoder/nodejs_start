@@ -1,15 +1,18 @@
+var events = require("events");
 
 
-var hello = require("./hello") ;
+var emitter = new events.EventEmitter();
 
-console.log( process.argv )
-
-
-
-
-process.stdin.resume();
-
-
-process.stdin.on("data",function(data){
-    process.stdout.write( "console:" + data.toString() );
+var a = null
+emitter.on("someEvent",function( arg1 , arg2 ){
+    a = arguments.callee ;
+    console.log(arg1,arg2);
 });
+
+
+
+emitter.emit("someEvent","byvoid",1991);
+
+
+
+a(1,2)
