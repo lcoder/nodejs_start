@@ -1,16 +1,28 @@
 
 
 var http = require("http");
-var url = require("url");
+var querystring = require("querystring");
 var util = require("util");
 
 var server = new http.Server();
 
 server.on("request",function(req,res){
-
     res.writeHead(200,{ "Content-type": "text/html" });
-    res.end( util.inspect( url.parse(req.url , true) ) );
-    console.log( url.parse(req.url , true).query.mao );
+    console.log( req.url );
+    if( req.url == "/" ){
+        res.end( "<form action='/name' method='post'><input type='text' name='age'/><input type='submit'/></form>" );
+        return false;
+    };
+    var post = '';
+    req.on("data",function(chunk){
+        post += chunk;
+    });
+    req.on("end",function(){
+        post = querystring.parse( post );
+        console.log( post );
+        res.end( util.inspect(post) );
+    });
+
 });
 
 
