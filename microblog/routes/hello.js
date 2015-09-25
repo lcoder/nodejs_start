@@ -9,9 +9,13 @@ var express = require('express') ;
 
 var router = express.Router();
 
+router.all("/",function(req,res,next){
+    console.log(123123);
+    next();
+});
 
 router.get("/",function(req,res,next){
-    res.send("time: " + new Date().toString() );
+    res.send("username: " + req.params.username );
 });
 
 
