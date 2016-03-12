@@ -1,0 +1,1046 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.7
+4 warn package.json chatromms@0.0.1 No repository field.
+5 warn package.json chatromms@0.0.1 No README data
+6 verbose install where, deps [ '/Users/maotingfeng/node/chatrooms', [ 'socket.io', 'mime' ] ]
+7 verbose install where, peers [ '/Users/maotingfeng/node/chatrooms', [] ]
+8 info preinstall chatromms@0.0.1
+9 silly cache add args [ 'mime@~1.2.7', null ]
+10 verbose cache add spec mime@~1.2.7
+11 silly cache add parsed spec { raw: 'mime@~1.2.7',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'mime',
+11 silly cache add   rawSpec: '~1.2.7',
+11 silly cache add   spec: '>=1.2.7 <1.3.0',
+11 silly cache add   type: 'range' }
+12 verbose addNamed mime@>=1.2.7 <1.3.0
+13 silly addNamed semver.valid null
+14 silly addNamed semver.validRange >=1.2.7 <1.3.0
+15 silly addNameRange { name: 'mime', range: '>=1.2.7 <1.3.0', hasData: false }
+16 silly mapToRegistry name mime
+17 silly mapToRegistry using default registry
+18 silly mapToRegistry registry https://registry.npmjs.org/
+19 silly mapToRegistry uri https://registry.npmjs.org/mime
+20 verbose addNameRange registry:https://registry.npmjs.org/mime not in flight; fetching
+21 silly cache add args [ 'socket.io@~0.9.6', null ]
+22 verbose cache add spec socket.io@~0.9.6
+23 silly cache add parsed spec { raw: 'socket.io@~0.9.6',
+23 silly cache add   scope: null,
+23 silly cache add   name: 'socket.io',
+23 silly cache add   rawSpec: '~0.9.6',
+23 silly cache add   spec: '>=0.9.6 <0.10.0',
+23 silly cache add   type: 'range' }
+24 verbose addNamed socket.io@>=0.9.6 <0.10.0
+25 silly addNamed semver.valid null
+26 silly addNamed semver.validRange >=0.9.6 <0.10.0
+27 silly addNameRange { name: 'socket.io', range: '>=0.9.6 <0.10.0', hasData: false }
+28 silly mapToRegistry name socket.io
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry uri https://registry.npmjs.org/socket.io
+32 verbose addNameRange registry:https://registry.npmjs.org/socket.io not in flight; fetching
+33 verbose request uri https://registry.npmjs.org/mime
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 10:14:20
+36 verbose request id 1112db7a6b9100e2
+37 verbose etag "8ZZNUXW9PW7JYTXB29WH9CM6E"
+38 http request GET https://registry.npmjs.org/mime
+39 verbose request uri https://registry.npmjs.org/socket.io
+40 verbose request no auth needed
+41 info attempt registry request try #1 at 10:14:20
+42 verbose etag "CU8DEOXWOCO2PDUD2UQ6JNK6Y"
+43 http request GET https://registry.npmjs.org/socket.io
+44 http 304 https://registry.npmjs.org/mime
+45 silly get cb [ 304,
+45 silly get   { date: 'Sat, 12 Mar 2016 02:14:21 GMT',
+45 silly get     via: '1.1 varnish',
+45 silly get     'cache-control': 'max-age=300',
+45 silly get     etag: '"8ZZNUXW9PW7JYTXB29WH9CM6E"',
+45 silly get     age: '184',
+45 silly get     connection: 'keep-alive',
+45 silly get     'x-served-by': 'cache-lhr6328-LHR',
+45 silly get     'x-cache': 'HIT',
+45 silly get     'x-cache-hits': '2',
+45 silly get     'x-timer': 'S1457748861.275204,VS0,VE0',
+45 silly get     vary: 'Accept' } ]
+46 verbose etag https://registry.npmjs.org/mime from cache
+47 verbose get saving mime to /Users/maotingfeng/.npm/registry.npmjs.org/mime/.cache.json
+48 silly addNameRange number 2 { name: 'mime', range: '>=1.2.7 <1.3.0', hasData: true }
+49 silly addNameRange versions [ 'mime',
+49 silly addNameRange   [ '1.0.0',
+49 silly addNameRange     '1.1.0',
+49 silly addNameRange     '1.2.1',
+49 silly addNameRange     '1.2.2',
+49 silly addNameRange     '1.2.3',
+49 silly addNameRange     '1.2.4',
+49 silly addNameRange     '1.2.5',
+49 silly addNameRange     '1.2.6',
+49 silly addNameRange     '1.2.7',
+49 silly addNameRange     '1.2.8',
+49 silly addNameRange     '1.2.9',
+49 silly addNameRange     '1.2.10',
+49 silly addNameRange     '1.2.11',
+49 silly addNameRange     '1.3.0',
+49 silly addNameRange     '1.3.2',
+49 silly addNameRange     '1.3.3',
+49 silly addNameRange     '1.3.4' ] ]
+50 verbose addNamed mime@1.2.11
+51 silly addNamed semver.valid 1.2.11
+52 silly addNamed semver.validRange 1.2.11
+53 silly cache afterAdd mime@1.2.11
+54 verbose afterAdd /Users/maotingfeng/.npm/mime/1.2.11/package/package.json not in flight; writing
+55 verbose afterAdd /Users/maotingfeng/.npm/mime/1.2.11/package/package.json written
+56 http 304 https://registry.npmjs.org/socket.io
+57 silly get cb [ 304,
+57 silly get   { date: 'Sat, 12 Mar 2016 02:14:21 GMT',
+57 silly get     via: '1.1 varnish',
+57 silly get     'cache-control': 'max-age=300',
+57 silly get     etag: '"CU8DEOXWOCO2PDUD2UQ6JNK6Y"',
+57 silly get     age: '18',
+57 silly get     connection: 'keep-alive',
+57 silly get     'x-served-by': 'cache-lhr6335-LHR',
+57 silly get     'x-cache': 'HIT',
+57 silly get     'x-cache-hits': '1',
+57 silly get     'x-timer': 'S1457748861.291819,VS0,VE0',
+57 silly get     vary: 'Accept' } ]
+58 verbose etag https://registry.npmjs.org/socket.io from cache
+59 verbose get saving socket.io to /Users/maotingfeng/.npm/registry.npmjs.org/socket.io/.cache.json
+60 silly addNameRange number 2 { name: 'socket.io', range: '>=0.9.6 <0.10.0', hasData: true }
+61 silly addNameRange versions [ 'socket.io',
+61 silly addNameRange   [ '0.3.8',
+61 silly addNameRange     '0.4.0',
+61 silly addNameRange     '0.4.1',
+61 silly addNameRange     '0.5.1',
+61 silly addNameRange     '0.5.3',
+61 silly addNameRange     '0.6.0',
+61 silly addNameRange     '0.6.1',
+61 silly addNameRange     '0.6.3',
+61 silly addNameRange     '0.6.4',
+61 silly addNameRange     '0.6.5',
+61 silly addNameRange     '0.6.6',
+61 silly addNameRange     '0.6.7',
+61 silly addNameRange     '0.6.8',
+61 silly addNameRange     '0.6.9',
+61 silly addNameRange     '0.6.10',
+61 silly addNameRange     '0.6.11',
+61 silly addNameRange     '0.6.12',
+61 silly addNameRange     '0.6.14',
+61 silly addNameRange     '0.6.15',
+61 silly addNameRange     '0.6.16',
+61 silly addNameRange     '0.6.17',
+61 silly addNameRange     '0.6.18',
+61 silly addNameRange     '0.7.0',
+61 silly addNameRange     '0.7.1',
+61 silly addNameRange     '0.7.2',
+61 silly addNameRange     '0.7.3',
+61 silly addNameRange     '0.7.4',
+61 silly addNameRange     '0.7.5',
+61 silly addNameRange     '0.7.6',
+61 silly addNameRange     '0.7.7',
+61 silly addNameRange     '0.7.8',
+61 silly addNameRange     '0.7.9',
+61 silly addNameRange     '0.7.10',
+61 silly addNameRange     '0.7.11',
+61 silly addNameRange     '0.8.0',
+61 silly addNameRange     '0.8.1',
+61 silly addNameRange     '0.8.2',
+61 silly addNameRange     '0.8.3',
+61 silly addNameRange     '0.8.4',
+61 silly addNameRange     '0.8.5',
+61 silly addNameRange     '0.8.6',
+61 silly addNameRange     '0.8.7',
+61 silly addNameRange     '0.9.0',
+61 silly addNameRange     '0.9.1',
+61 silly addNameRange     '0.9.1-1',
+61 silly addNameRange     '0.9.2',
+61 silly addNameRange     '0.9.3',
+61 silly addNameRange     '0.9.4',
+61 silly addNameRange     '0.9.5',
+61 silly addNameRange     '0.9.6',
+61 silly addNameRange     '0.9.7',
+61 silly addNameRange     '0.9.8',
+61 silly addNameRange     '0.9.9',
+61 silly addNameRange     '0.9.10',
+61 silly addNameRange     '0.9.11',
+61 silly addNameRange     '0.9.12',
+61 silly addNameRange     '0.9.13',
+61 silly addNameRange     '0.9.14',
+61 silly addNameRange     '0.9.15',
+61 silly addNameRange     '0.9.16',
+61 silly addNameRange     '1.0.0-pre',
+61 silly addNameRange     '1.0.0-pre2',
+61 silly addNameRange     '1.0.0-pre3',
+61 silly addNameRange     '1.0.0-pre4',
+61 silly addNameRange     '1.0.0-pre5',
+61 silly addNameRange     '0.9.17',
+61 silly addNameRange     '1.0.0',
+61 silly addNameRange     '1.0.1',
+61 silly addNameRange     '1.0.2',
+61 silly addNameRange     '1.0.3',
+61 silly addNameRange     '1.0.4',
+61 silly addNameRange     '1.0.5',
+61 silly addNameRange     '1.0.6',
+61 silly addNameRange     '1.1.0',
+61 silly addNameRange     '1.2.0',
+61 silly addNameRange     '1.2.1',
+61 silly addNameRange     '1.3.0',
+61 silly addNameRange     '1.3.1',
+61 silly addNameRange     '1.3.2',
+61 silly addNameRange     '1.3.3',
+61 silly addNameRange     '1.3.4',
+61 silly addNameRange     '1.3.5',
+61 silly addNameRange     '1.3.6',
+61 silly addNameRange     '1.3.7',
+61 silly addNameRange     '1.4.0',
+61 silly addNameRange     '1.4.1',
+61 silly addNameRange     '1.4.2',
+61 silly addNameRange     '1.4.3',
+61 silly addNameRange     '1.4.4',
+61 silly addNameRange     '1.4.5' ] ]
+62 verbose addNamed socket.io@0.9.17
+63 silly addNamed semver.valid 0.9.17
+64 silly addNamed semver.validRange 0.9.17
+65 silly cache afterAdd socket.io@0.9.17
+66 verbose afterAdd /Users/maotingfeng/.npm/socket.io/0.9.17/package/package.json not in flight; writing
+67 verbose afterAdd /Users/maotingfeng/.npm/socket.io/0.9.17/package/package.json written
+68 silly install resolved [ { author:
+68 silly install resolved      { name: 'Robert Kieffer',
+68 silly install resolved        email: 'robert@broofa.com',
+68 silly install resolved        url: 'http://github.com/broofa' },
+68 silly install resolved     contributors: [ [Object] ],
+68 silly install resolved     dependencies: {},
+68 silly install resolved     description: 'A comprehensive library for mime-type mapping',
+68 silly install resolved     devDependencies: {},
+68 silly install resolved     keywords: [ 'util', 'mime' ],
+68 silly install resolved     main: 'mime.js',
+68 silly install resolved     name: 'mime',
+68 silly install resolved     repository: { url: 'https://github.com/broofa/node-mime', type: 'git' },
+68 silly install resolved     version: '1.2.11',
+68 silly install resolved     bugs: { url: 'https://github.com/broofa/node-mime/issues' },
+68 silly install resolved     _id: 'mime@1.2.11',
+68 silly install resolved     dist:
+68 silly install resolved      { shasum: '58203eed86e3a5ef17aed2b7d9ebd47f0a60dd10',
+68 silly install resolved        tarball: 'http://registry.npmjs.org/mime/-/mime-1.2.11.tgz' },
+68 silly install resolved     _from: 'mime@>=1.2.7 <1.3.0',
+68 silly install resolved     _npmVersion: '1.3.6',
+68 silly install resolved     _npmUser: { name: 'broofa', email: 'robert@broofa.com' },
+68 silly install resolved     maintainers: [ [Object], [Object] ],
+68 silly install resolved     directories: {},
+68 silly install resolved     _shasum: '58203eed86e3a5ef17aed2b7d9ebd47f0a60dd10',
+68 silly install resolved     _resolved: 'https://registry.npmjs.org/mime/-/mime-1.2.11.tgz',
+68 silly install resolved     readme: 'ERROR: No README data found!',
+68 silly install resolved     homepage: 'https://github.com/broofa/node-mime' },
+68 silly install resolved   { name: 'socket.io',
+68 silly install resolved     version: '0.9.17',
+68 silly install resolved     description: 'Real-time apps made cross-browser & easy with a WebSocket-like API',
+68 silly install resolved     homepage: 'http://socket.io',
+68 silly install resolved     keywords: [ 'websocket', 'socket', 'realtime', 'socket.io', 'comet', 'ajax' ],
+68 silly install resolved     author: { name: 'Guillermo Rauch', email: 'guillermo@learnboost.com' },
+68 silly install resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+68 silly install resolved     repository:
+68 silly install resolved      { type: 'git',
+68 silly install resolved        url: 'https://github.com/LearnBoost/socket.io.git' },
+68 silly install resolved     dependencies:
+68 silly install resolved      { 'socket.io-client': '0.9.16',
+68 silly install resolved        policyfile: '0.0.4',
+68 silly install resolved        base64id: '0.1.0',
+68 silly install resolved        redis: '0.7.3' },
+68 silly install resolved     devDependencies:
+68 silly install resolved      { expresso: '0.9.2',
+68 silly install resolved        should: '*',
+68 silly install resolved        benchmark: '0.2.2',
+68 silly install resolved        microtime: '0.1.3-1',
+68 silly install resolved        colors: '0.5.1' },
+68 silly install resolved     optionalDependencies: { redis: '0.7.3' },
+68 silly install resolved     main: 'index',
+68 silly install resolved     engines: { node: '>= 0.4.0' },
+68 silly install resolved     scripts: { test: 'make test' },
+68 silly install resolved     bugs: { url: 'https://github.com/LearnBoost/socket.io/issues' },
+68 silly install resolved     _id: 'socket.io@0.9.17',
+68 silly install resolved     _shasum: 'ca389268fb2cd5df4b59218490a08c907581c9ec',
+68 silly install resolved     _from: 'socket.io@>=0.9.6 <0.10.0',
+68 silly install resolved     _npmVersion: '1.4.7',
+68 silly install resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+68 silly install resolved     maintainers: [ [Object] ],
+68 silly install resolved     dist:
+68 silly install resolved      { shasum: 'ca389268fb2cd5df4b59218490a08c907581c9ec',
+68 silly install resolved        tarball: 'http://registry.npmjs.org/socket.io/-/socket.io-0.9.17.tgz' },
+68 silly install resolved     directories: {},
+68 silly install resolved     _resolved: 'https://registry.npmjs.org/socket.io/-/socket.io-0.9.17.tgz',
+68 silly install resolved     readme: 'ERROR: No README data found!' } ]
+69 info install mime@1.2.11 into /Users/maotingfeng/node/chatrooms
+70 info install socket.io@0.9.17 into /Users/maotingfeng/node/chatrooms
+71 info installOne mime@1.2.11
+72 verbose installOne of mime to /Users/maotingfeng/node/chatrooms not in flight; installing
+73 info installOne socket.io@0.9.17
+74 verbose installOne of socket.io to /Users/maotingfeng/node/chatrooms not in flight; installing
+75 verbose lock using /Users/maotingfeng/.npm/_locks/mime-9d914f8f18ce4fc6.lock for /Users/maotingfeng/node/chatrooms/node_modules/mime
+76 silly install write writing mime 1.2.11 to /Users/maotingfeng/node/chatrooms/node_modules/mime
+77 silly cache addNamed cb mime@1.2.11
+78 verbose unbuild node_modules/mime
+79 verbose gentlyRm vacuuming /Users/maotingfeng/node/chatrooms/node_modules/mime
+80 verbose tar unpack /Users/maotingfeng/.npm/mime/1.2.11/package.tgz
+81 verbose tar unpacking to /Users/maotingfeng/node/chatrooms/node_modules/mime
+82 verbose gentlyRm vacuuming /Users/maotingfeng/node/chatrooms/node_modules/mime
+83 silly gunzTarPerm modes [ '755', '644' ]
+84 verbose lock using /Users/maotingfeng/.npm/_locks/socket-io-a55a3f3e02bfd0e1.lock for /Users/maotingfeng/node/chatrooms/node_modules/socket.io
+85 silly install write writing socket.io 0.9.17 to /Users/maotingfeng/node/chatrooms/node_modules/socket.io
+86 silly cache addNamed cb socket.io@0.9.17
+87 verbose unbuild node_modules/socket.io
+88 verbose gentlyRm vacuuming /Users/maotingfeng/node/chatrooms/node_modules/socket.io
+89 silly gunzTarPerm extractEntry package.json
+90 verbose tar unpack /Users/maotingfeng/.npm/socket.io/0.9.17/package.tgz
+91 verbose tar unpacking to /Users/maotingfeng/node/chatrooms/node_modules/socket.io
+92 verbose gentlyRm vacuuming /Users/maotingfeng/node/chatrooms/node_modules/socket.io
+93 silly gunzTarPerm modes [ '755', '644' ]
+94 silly gunzTarPerm extractEntry README.md
+95 silly gunzTarPerm extractEntry LICENSE
+96 silly gunzTarPerm extractEntry package.json
+97 silly gunzTarPerm extractEntry .npmignore
+98 silly gunzTarPerm extractEntry LICENSE
+99 silly gunzTarPerm extractEntry mime.js
+100 silly gunzTarPerm extractEntry test.js
+101 silly gunzTarPerm extractEntry types/mime.types
+102 silly gunzTarPerm extractEntry types/node.types
+103 silly gunzTarPerm extractEntry index.js
+104 silly gunzTarPerm extractEntry History.md
+105 silly gunzTarPerm extractEntry Makefile
+106 silly gunzTarPerm extractEntry Readme.md
+107 silly gunzTarPerm extractEntry .travis.yml
+108 silly gunzTarPerm extractEntry latest
+109 silly gunzTarPerm extractEntry lib/logger.js
+110 silly gunzTarPerm extractEntry lib/namespace.js
+111 silly gunzTarPerm extractEntry lib/parser.js
+112 silly gunzTarPerm extractEntry lib/socket.io.js
+113 silly gunzTarPerm extractEntry lib/socket.js
+114 silly gunzTarPerm extractEntry lib/manager.js
+115 silly gunzTarPerm extractEntry lib/store.js
+116 silly gunzTarPerm extractEntry lib/transport.js
+117 silly gunzTarPerm extractEntry lib/util.js
+118 silly gunzTarPerm extractEntry lib/static.js
+119 silly gunzTarPerm extractEntry lib/stores/memory.js
+120 silly gunzTarPerm extractEntry lib/stores/redis.js
+121 silly gunzTarPerm extractEntry lib/transports/flashsocket.js
+122 silly gunzTarPerm extractEntry lib/transports/htmlfile.js
+123 silly gunzTarPerm extractEntry lib/transports/http-polling.js
+124 silly gunzTarPerm extractEntry lib/transports/http.js
+125 silly gunzTarPerm extractEntry lib/transports/index.js
+126 info preinstall mime@1.2.11
+127 silly gunzTarPerm extractEntry lib/transports/jsonp-polling.js
+128 silly gunzTarPerm extractEntry lib/transports/websocket.js
+129 silly install resolved []
+130 verbose about to build /Users/maotingfeng/node/chatrooms/node_modules/mime
+131 info build /Users/maotingfeng/node/chatrooms/node_modules/mime
+132 verbose linkStuff [ false,
+132 verbose linkStuff   false,
+132 verbose linkStuff   false,
+132 verbose linkStuff   '/Users/maotingfeng/node/chatrooms/node_modules' ]
+133 info linkStuff mime@1.2.11
+134 verbose linkBins mime@1.2.11
+135 verbose linkMans mime@1.2.11
+136 verbose rebuildBundles mime@1.2.11
+137 info install mime@1.2.11
+138 info postinstall mime@1.2.11
+139 verbose unlock done using /Users/maotingfeng/.npm/_locks/mime-9d914f8f18ce4fc6.lock for /Users/maotingfeng/node/chatrooms/node_modules/mime
+140 silly gunzTarPerm extractEntry lib/transports/xhr-polling.js
+141 silly gunzTarPerm extractEntry lib/transports/websocket/default.js
+142 silly gunzTarPerm extractEntry lib/transports/websocket/hybi-07-12.js
+143 silly gunzTarPerm extractEntry lib/transports/websocket/hybi-16.js
+144 silly gunzTarPerm extractEntry lib/transports/websocket/index.js
+145 silly gunzTarPerm extractEntry benchmarks/decode.bench.js
+146 silly gunzTarPerm extractEntry benchmarks/encode.bench.js
+147 silly gunzTarPerm extractEntry benchmarks/runner.js
+148 info preinstall socket.io@0.9.17
+149 silly prepareForInstallMany adding socket.io-client@0.9.16 from socket.io dependencies
+150 silly prepareForInstallMany adding policyfile@0.0.4 from socket.io dependencies
+151 silly prepareForInstallMany adding base64id@0.1.0 from socket.io dependencies
+152 silly prepareForInstallMany adding redis@0.7.3 from socket.io dependencies
+153 silly cache add args [ 'socket.io-client@0.9.16', null ]
+154 verbose cache add spec socket.io-client@0.9.16
+155 silly cache add args [ 'policyfile@0.0.4', null ]
+156 verbose cache add spec policyfile@0.0.4
+157 silly cache add parsed spec { raw: 'socket.io-client@0.9.16',
+157 silly cache add   scope: null,
+157 silly cache add   name: 'socket.io-client',
+157 silly cache add   rawSpec: '0.9.16',
+157 silly cache add   spec: '0.9.16',
+157 silly cache add   type: 'version' }
+158 verbose addNamed socket.io-client@0.9.16
+159 silly addNamed semver.valid 0.9.16
+160 silly addNamed semver.validRange 0.9.16
+161 silly mapToRegistry name socket.io-client
+162 silly mapToRegistry using default registry
+163 silly mapToRegistry registry https://registry.npmjs.org/
+164 silly mapToRegistry uri https://registry.npmjs.org/socket.io-client
+165 verbose addNameVersion registry:https://registry.npmjs.org/socket.io-client not in flight; fetching
+166 silly cache add parsed spec { raw: 'policyfile@0.0.4',
+166 silly cache add   scope: null,
+166 silly cache add   name: 'policyfile',
+166 silly cache add   rawSpec: '0.0.4',
+166 silly cache add   spec: '0.0.4',
+166 silly cache add   type: 'version' }
+167 verbose addNamed policyfile@0.0.4
+168 silly addNamed semver.valid 0.0.4
+169 silly addNamed semver.validRange 0.0.4
+170 silly mapToRegistry name policyfile
+171 silly mapToRegistry using default registry
+172 silly mapToRegistry registry https://registry.npmjs.org/
+173 silly mapToRegistry uri https://registry.npmjs.org/policyfile
+174 verbose addNameVersion registry:https://registry.npmjs.org/policyfile not in flight; fetching
+175 silly cache add args [ 'base64id@0.1.0', null ]
+176 verbose cache add spec base64id@0.1.0
+177 silly cache add parsed spec { raw: 'base64id@0.1.0',
+177 silly cache add   scope: null,
+177 silly cache add   name: 'base64id',
+177 silly cache add   rawSpec: '0.1.0',
+177 silly cache add   spec: '0.1.0',
+177 silly cache add   type: 'version' }
+178 verbose addNamed base64id@0.1.0
+179 silly addNamed semver.valid 0.1.0
+180 silly addNamed semver.validRange 0.1.0
+181 silly mapToRegistry name base64id
+182 silly mapToRegistry using default registry
+183 silly mapToRegistry registry https://registry.npmjs.org/
+184 silly mapToRegistry uri https://registry.npmjs.org/base64id
+185 verbose addNameVersion registry:https://registry.npmjs.org/base64id not in flight; fetching
+186 silly cache add args [ 'redis@0.7.3', null ]
+187 verbose cache add spec redis@0.7.3
+188 silly cache add parsed spec { raw: 'redis@0.7.3',
+188 silly cache add   scope: null,
+188 silly cache add   name: 'redis',
+188 silly cache add   rawSpec: '0.7.3',
+188 silly cache add   spec: '0.7.3',
+188 silly cache add   type: 'version' }
+189 verbose addNamed redis@0.7.3
+190 silly addNamed semver.valid 0.7.3
+191 silly addNamed semver.validRange 0.7.3
+192 silly mapToRegistry name redis
+193 silly mapToRegistry using default registry
+194 silly mapToRegistry registry https://registry.npmjs.org/
+195 silly mapToRegistry uri https://registry.npmjs.org/redis
+196 verbose addNameVersion registry:https://registry.npmjs.org/redis not in flight; fetching
+197 verbose request uri https://registry.npmjs.org/policyfile
+198 verbose request no auth needed
+199 info attempt registry request try #1 at 10:14:21
+200 http request GET https://registry.npmjs.org/policyfile
+201 verbose request uri https://registry.npmjs.org/redis
+202 verbose request no auth needed
+203 info attempt registry request try #1 at 10:14:21
+204 http request GET https://registry.npmjs.org/redis
+205 verbose request uri https://registry.npmjs.org/base64id
+206 verbose request no auth needed
+207 info attempt registry request try #1 at 10:14:21
+208 verbose etag "ZEE8IJIDFX5BG7BGOQN9YBZP"
+209 http request GET https://registry.npmjs.org/base64id
+210 verbose request uri https://registry.npmjs.org/socket.io-client
+211 verbose request no auth needed
+212 info attempt registry request try #1 at 10:14:21
+213 verbose etag "11K8CBUUSOK8R9ACE9SYE3ZZS"
+214 http request GET https://registry.npmjs.org/socket.io-client
+215 http 304 https://registry.npmjs.org/base64id
+216 silly get cb [ 304,
+216 silly get   { date: 'Sat, 12 Mar 2016 02:14:22 GMT',
+216 silly get     via: '1.1 varnish',
+216 silly get     'cache-control': 'max-age=300',
+216 silly get     etag: '"ZEE8IJIDFX5BG7BGOQN9YBZP"',
+216 silly get     age: '86',
+216 silly get     connection: 'keep-alive',
+216 silly get     'x-served-by': 'cache-lhr6320-LHR',
+216 silly get     'x-cache': 'HIT',
+216 silly get     'x-cache-hits': '1',
+216 silly get     'x-timer': 'S1457748862.159875,VS0,VE0',
+216 silly get     vary: 'Accept' } ]
+217 verbose etag https://registry.npmjs.org/base64id from cache
+218 verbose get saving base64id to /Users/maotingfeng/.npm/registry.npmjs.org/base64id/.cache.json
+219 silly cache afterAdd base64id@0.1.0
+220 verbose afterAdd /Users/maotingfeng/.npm/base64id/0.1.0/package/package.json not in flight; writing
+221 verbose afterAdd /Users/maotingfeng/.npm/base64id/0.1.0/package/package.json written
+222 http 200 https://registry.npmjs.org/policyfile
+223 silly get cb [ 200,
+223 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+223 silly get     etag: '"71BD6ETSJBIN563OWQFIAGMZJ"',
+223 silly get     'content-type': 'application/json',
+223 silly get     'cache-control': 'max-age=300',
+223 silly get     'content-length': '6196',
+223 silly get     'accept-ranges': 'bytes',
+223 silly get     date: 'Sat, 12 Mar 2016 02:14:22 GMT',
+223 silly get     via: '1.1 varnish',
+223 silly get     age: '84',
+223 silly get     connection: 'keep-alive',
+223 silly get     'x-served-by': 'cache-lhr6320-LHR',
+223 silly get     'x-cache': 'HIT',
+223 silly get     'x-cache-hits': '1',
+223 silly get     'x-timer': 'S1457748862.183565,VS0,VE0',
+223 silly get     vary: 'Accept' } ]
+224 verbose get saving policyfile to /Users/maotingfeng/.npm/registry.npmjs.org/policyfile/.cache.json
+225 http 304 https://registry.npmjs.org/socket.io-client
+226 silly get cb [ 304,
+226 silly get   { date: 'Sat, 12 Mar 2016 02:14:22 GMT',
+226 silly get     via: '1.1 varnish',
+226 silly get     'cache-control': 'max-age=300',
+226 silly get     etag: '"11K8CBUUSOK8R9ACE9SYE3ZZS"',
+226 silly get     age: '106',
+226 silly get     connection: 'keep-alive',
+226 silly get     'x-served-by': 'cache-lhr6327-LHR',
+226 silly get     'x-cache': 'HIT',
+226 silly get     'x-cache-hits': '1',
+226 silly get     'x-timer': 'S1457748862.183213,VS0,VE0',
+226 silly get     vary: 'Accept' } ]
+227 verbose etag https://registry.npmjs.org/socket.io-client from cache
+228 verbose get saving socket.io-client to /Users/maotingfeng/.npm/registry.npmjs.org/socket.io-client/.cache.json
+229 silly mapToRegistry name policyfile
+230 silly mapToRegistry using default registry
+231 silly mapToRegistry registry https://registry.npmjs.org/
+232 silly mapToRegistry uri https://registry.npmjs.org/policyfile
+233 verbose addRemoteTarball https://registry.npmjs.org/policyfile/-/policyfile-0.0.4.tgz not in flight; adding
+234 verbose addRemoteTarball [ 'https://registry.npmjs.org/policyfile/-/policyfile-0.0.4.tgz',
+234 verbose addRemoteTarball   'd6b82ead98ae79ebe228e2daf5903311ec982e4d' ]
+235 silly mapToRegistry name socket.io-client
+236 silly mapToRegistry using default registry
+237 silly mapToRegistry registry https://registry.npmjs.org/
+238 silly mapToRegistry uri https://registry.npmjs.org/socket.io-client
+239 verbose addRemoteTarball https://registry.npmjs.org/socket.io-client/-/socket.io-client-0.9.16.tgz not in flight; adding
+240 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io-client/-/socket.io-client-0.9.16.tgz',
+240 verbose addRemoteTarball   '4da7515c5e773041d1b423970415bcc430f35fc6' ]
+241 info retry fetch attempt 1 at 10:14:22
+242 info attempt registry request try #1 at 10:14:22
+243 http fetch GET https://registry.npmjs.org/policyfile/-/policyfile-0.0.4.tgz
+244 info retry fetch attempt 1 at 10:14:22
+245 info attempt registry request try #1 at 10:14:22
+246 http fetch GET https://registry.npmjs.org/socket.io-client/-/socket.io-client-0.9.16.tgz
+247 http 200 https://registry.npmjs.org/redis
+248 silly get cb [ 200,
+248 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+248 silly get     etag: '"1MR7H4DSC820K5S5RGQW7OHP7"',
+248 silly get     'content-type': 'application/json',
+248 silly get     'cache-control': 'max-age=300',
+248 silly get     'content-length': '123567',
+248 silly get     'accept-ranges': 'bytes',
+248 silly get     date: 'Sat, 12 Mar 2016 02:14:22 GMT',
+248 silly get     via: '1.1 varnish',
+248 silly get     age: '222',
+248 silly get     connection: 'keep-alive',
+248 silly get     'x-served-by': 'cache-lhr6332-LHR',
+248 silly get     'x-cache': 'HIT',
+248 silly get     'x-cache-hits': '1',
+248 silly get     'x-timer': 'S1457748862.133448,VS0,VE0',
+248 silly get     vary: 'Accept' } ]
+249 verbose get saving redis to /Users/maotingfeng/.npm/registry.npmjs.org/redis/.cache.json
+250 silly mapToRegistry name redis
+251 silly mapToRegistry using default registry
+252 silly mapToRegistry registry https://registry.npmjs.org/
+253 silly mapToRegistry uri https://registry.npmjs.org/redis
+254 verbose addRemoteTarball https://registry.npmjs.org/redis/-/redis-0.7.3.tgz not in flight; adding
+255 verbose addRemoteTarball [ 'https://registry.npmjs.org/redis/-/redis-0.7.3.tgz',
+255 verbose addRemoteTarball   'ee57b7a44d25ec1594e44365d8165fa7d1d4811a' ]
+256 info retry fetch attempt 1 at 10:14:22
+257 info attempt registry request try #1 at 10:14:22
+258 http fetch GET https://registry.npmjs.org/redis/-/redis-0.7.3.tgz
+259 http fetch 200 https://registry.npmjs.org/policyfile/-/policyfile-0.0.4.tgz
+260 silly fetchAndShaCheck shasum d6b82ead98ae79ebe228e2daf5903311ec982e4d
+261 verbose addTmpTarball /tmp/npm-776-2de95f40/registry.npmjs.org/policyfile/-/policyfile-0.0.4.tgz not in flight; adding
+262 verbose addTmpTarball already have metadata; skipping unpack for policyfile@0.0.4
+263 silly cache afterAdd policyfile@0.0.4
+264 verbose afterAdd /Users/maotingfeng/.npm/policyfile/0.0.4/package/package.json not in flight; writing
+265 verbose afterAdd /Users/maotingfeng/.npm/policyfile/0.0.4/package/package.json written
+266 http fetch 200 https://registry.npmjs.org/socket.io-client/-/socket.io-client-0.9.16.tgz
+267 http fetch 200 https://registry.npmjs.org/redis/-/redis-0.7.3.tgz
+268 silly fetchAndShaCheck shasum ee57b7a44d25ec1594e44365d8165fa7d1d4811a
+269 verbose addTmpTarball /tmp/npm-776-2de95f40/registry.npmjs.org/redis/-/redis-0.7.3.tgz not in flight; adding
+270 verbose addTmpTarball already have metadata; skipping unpack for redis@0.7.3
+271 silly cache afterAdd redis@0.7.3
+272 verbose afterAdd /Users/maotingfeng/.npm/redis/0.7.3/package/package.json not in flight; writing
+273 verbose afterAdd /Users/maotingfeng/.npm/redis/0.7.3/package/package.json written
+274 silly fetchAndShaCheck shasum 4da7515c5e773041d1b423970415bcc430f35fc6
+275 verbose addTmpTarball /tmp/npm-776-2de95f40/registry.npmjs.org/socket.io-client/-/socket.io-client-0.9.16.tgz not in flight; adding
+276 verbose addTmpTarball already have metadata; skipping unpack for socket.io-client@0.9.16
+277 silly cache afterAdd socket.io-client@0.9.16
+278 verbose afterAdd /Users/maotingfeng/.npm/socket.io-client/0.9.16/package/package.json not in flight; writing
+279 verbose afterAdd /Users/maotingfeng/.npm/socket.io-client/0.9.16/package/package.json written
+280 silly install resolved [ { name: 'base64id',
+280 silly install resolved     version: '0.1.0',
+280 silly install resolved     description: 'Generates a base64 id',
+280 silly install resolved     author:
+280 silly install resolved      { name: 'Kristian Faeldt',
+280 silly install resolved        email: 'faeldt_kristian@cyberagent.co.jp' },
+280 silly install resolved     repository: { type: 'git', url: 'git://github.com/faeldt/base64id.git' },
+280 silly install resolved     main: './lib/base64id.js',
+280 silly install resolved     engines: { node: '>= 0.4.0' },
+280 silly install resolved     _npmUser:
+280 silly install resolved      { name: 'faeldt_kristian',
+280 silly install resolved        email: 'faeldt_kristian@cyberagent.co.jp' },
+280 silly install resolved     _id: 'base64id@0.1.0',
+280 silly install resolved     dependencies: {},
+280 silly install resolved     devDependencies: {},
+280 silly install resolved     optionalDependencies: {},
+280 silly install resolved     _engineSupported: true,
+280 silly install resolved     _npmVersion: '1.1.16',
+280 silly install resolved     _nodeVersion: 'v0.6.15',
+280 silly install resolved     _defaultsLoaded: true,
+280 silly install resolved     dist:
+280 silly install resolved      { shasum: '02ce0fdeee0cef4f40080e1e73e834f0b1bfce3f',
+280 silly install resolved        tarball: 'http://registry.npmjs.org/base64id/-/base64id-0.1.0.tgz' },
+280 silly install resolved     maintainers: [ [Object] ],
+280 silly install resolved     directories: {},
+280 silly install resolved     _shasum: '02ce0fdeee0cef4f40080e1e73e834f0b1bfce3f',
+280 silly install resolved     _resolved: 'https://registry.npmjs.org/base64id/-/base64id-0.1.0.tgz',
+280 silly install resolved     _from: 'base64id@0.1.0',
+280 silly install resolved     bugs: { url: 'https://github.com/faeldt/base64id/issues' },
+280 silly install resolved     readme: 'ERROR: No README data found!',
+280 silly install resolved     homepage: 'https://github.com/faeldt/base64id' },
+280 silly install resolved   { name: 'policyfile',
+280 silly install resolved     version: '0.0.4',
+280 silly install resolved     author: { name: 'Arnout Kazemier' },
+280 silly install resolved     description: 'Flash Socket Policy File Server. A server to respond to Flash Socket Policy requests, both inline and through a dedicated server instance.',
+280 silly install resolved     main: 'index',
+280 silly install resolved     keywords:
+280 silly install resolved      [ 'flash',
+280 silly install resolved        'socket',
+280 silly install resolved        'policy',
+280 silly install resolved        'file',
+280 silly install resolved        'server',
+280 silly install resolved        'Flash Socket Policy File Server',
+280 silly install resolved        'cross domain' ],
+280 silly install resolved     directories: { lib: './lib' },
+280 silly install resolved     maintainers: [ [Object] ],
+280 silly install resolved     licenses: [ [Object] ],
+280 silly install resolved     repositories: [ [Object] ],
+280 silly install resolved     _id: 'policyfile@0.0.4',
+280 silly install resolved     dependencies: {},
+280 silly install resolved     devDependencies: {},
+280 silly install resolved     engines: { node: '*' },
+280 silly install resolved     _engineSupported: true,
+280 silly install resolved     _npmVersion: '1.0.12',
+280 silly install resolved     _nodeVersion: 'v0.4.8',
+280 silly install resolved     _defaultsLoaded: true,
+280 silly install resolved     dist:
+280 silly install resolved      { shasum: 'd6b82ead98ae79ebe228e2daf5903311ec982e4d',
+280 silly install resolved        tarball: 'http://registry.npmjs.org/policyfile/-/policyfile-0.0.4.tgz' },
+280 silly install resolved     scripts: {},
+280 silly install resolved     _shasum: 'd6b82ead98ae79ebe228e2daf5903311ec982e4d',
+280 silly install resolved     _resolved: 'https://registry.npmjs.org/policyfile/-/policyfile-0.0.4.tgz',
+280 silly install resolved     _from: 'policyfile@0.0.4' },
+280 silly install resolved   { name: 'redis',
+280 silly install resolved     version: '0.7.3',
+280 silly install resolved     description: 'Redis client library',
+280 silly install resolved     author: { name: 'Matt Ranney', email: 'mjr@ranney.com' },
+280 silly install resolved     maintainers: [ [Object] ],
+280 silly install resolved     main: './index.js',
+280 silly install resolved     scripts: { test: 'node ./test.js' },
+280 silly install resolved     devDependencies: { metrics: '>=0.1.5' },
+280 silly install resolved     repository: { type: 'git', url: 'git://github.com/mranney/node_redis.git' },
+280 silly install resolved     _npmUser: { name: 'mjr', email: 'mjr@ranney.com' },
+280 silly install resolved     _id: 'redis@0.7.3',
+280 silly install resolved     dependencies: {},
+280 silly install resolved     optionalDependencies: {},
+280 silly install resolved     engines: { node: '*' },
+280 silly install resolved     _engineSupported: true,
+280 silly install resolved     _npmVersion: '1.1.21',
+280 silly install resolved     _nodeVersion: 'v0.8.1',
+280 silly install resolved     _defaultsLoaded: true,
+280 silly install resolved     dist:
+280 silly install resolved      { shasum: 'ee57b7a44d25ec1594e44365d8165fa7d1d4811a',
+280 silly install resolved        tarball: 'http://registry.npmjs.org/redis/-/redis-0.7.3.tgz' },
+280 silly install resolved     directories: {},
+280 silly install resolved     _shasum: 'ee57b7a44d25ec1594e44365d8165fa7d1d4811a',
+280 silly install resolved     _resolved: 'https://registry.npmjs.org/redis/-/redis-0.7.3.tgz',
+280 silly install resolved     _from: 'redis@0.7.3' },
+280 silly install resolved   { name: 'socket.io-client',
+280 silly install resolved     description: 'Socket.IO client for the browser and node.js',
+280 silly install resolved     version: '0.9.16',
+280 silly install resolved     main: './lib/io.js',
+280 silly install resolved     browserify: './dist/socket.io.js',
+280 silly install resolved     homepage: 'http://socket.io',
+280 silly install resolved     keywords: [ 'websocket', 'socket', 'realtime', 'socket.io', 'comet', 'ajax' ],
+280 silly install resolved     author: { name: 'Guillermo Rauch', email: 'guillermo@learnboost.com' },
+280 silly install resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+280 silly install resolved     repository:
+280 silly install resolved      { type: 'git',
+280 silly install resolved        url: 'https://github.com/LearnBoost/socket.io-client.git' },
+280 silly install resolved     dependencies:
+280 silly install resolved      { 'uglify-js': '1.2.5',
+280 silly install resolved        ws: '0.4.x',
+280 silly install resolved        xmlhttprequest: '1.4.2',
+280 silly install resolved        'active-x-obfuscator': '0.0.1' },
+280 silly install resolved     devDependencies:
+280 silly install resolved      { expresso: '*',
+280 silly install resolved        express: '2.5.x',
+280 silly install resolved        jade: '*',
+280 silly install resolved        stylus: '*',
+280 silly install resolved        'socket.io': '0.9.16',
+280 silly install resolved        'socket.io-client': '0.9.16',
+280 silly install resolved        should: '*' },
+280 silly install resolved     engines: { node: '>= 0.4.0' },
+280 silly install resolved     _id: 'socket.io-client@0.9.16',
+280 silly install resolved     dist:
+280 silly install resolved      { shasum: '4da7515c5e773041d1b423970415bcc430f35fc6',
+280 silly install resolved        tarball: 'http://registry.npmjs.org/socket.io-client/-/socket.io-client-0.9.16.tgz' },
+280 silly install resolved     _from: 'socket.io-client@0.9.16',
+280 silly install resolved     _npmVersion: '1.2.18',
+280 silly install resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+280 silly install resolved     maintainers: [ [Object] ],
+280 silly install resolved     directories: {},
+280 silly install resolved     _shasum: '4da7515c5e773041d1b423970415bcc430f35fc6',
+280 silly install resolved     _resolved: 'https://registry.npmjs.org/socket.io-client/-/socket.io-client-0.9.16.tgz' } ]
+281 info install base64id@0.1.0 into /Users/maotingfeng/node/chatrooms/node_modules/socket.io
+282 info install policyfile@0.0.4 into /Users/maotingfeng/node/chatrooms/node_modules/socket.io
+283 info install redis@0.7.3 into /Users/maotingfeng/node/chatrooms/node_modules/socket.io
+284 info install socket.io-client@0.9.16 into /Users/maotingfeng/node/chatrooms/node_modules/socket.io
+285 info installOne base64id@0.1.0
+286 verbose installOne of base64id to /Users/maotingfeng/node/chatrooms/node_modules/socket.io not in flight; installing
+287 info installOne policyfile@0.0.4
+288 verbose installOne of policyfile to /Users/maotingfeng/node/chatrooms/node_modules/socket.io not in flight; installing
+289 info installOne redis@0.7.3
+290 verbose installOne of redis to /Users/maotingfeng/node/chatrooms/node_modules/socket.io not in flight; installing
+291 info installOne socket.io-client@0.9.16
+292 verbose installOne of socket.io-client to /Users/maotingfeng/node/chatrooms/node_modules/socket.io not in flight; installing
+293 verbose lock using /Users/maotingfeng/.npm/_locks/policyfile-c18f22f5bdede95b.lock for /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/policyfile
+294 verbose lock using /Users/maotingfeng/.npm/_locks/base64id-8f98ca48aec07942.lock for /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/base64id
+295 verbose lock using /Users/maotingfeng/.npm/_locks/redis-5f11dafc2d04256b.lock for /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/redis
+296 verbose lock using /Users/maotingfeng/.npm/_locks/socket-io-client-7d07340c0f3fb764.lock for /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/socket.io-client
+297 silly install write writing policyfile 0.0.4 to /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/policyfile
+298 silly install write writing base64id 0.1.0 to /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/base64id
+299 silly cache addNamed cb base64id@0.1.0
+300 verbose unbuild node_modules/socket.io/node_modules/base64id
+301 silly install write writing redis 0.7.3 to /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/redis
+302 silly install write writing socket.io-client 0.9.16 to /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/socket.io-client
+303 verbose gentlyRm vacuuming /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/base64id
+304 verbose tar unpack /Users/maotingfeng/.npm/base64id/0.1.0/package.tgz
+305 verbose tar unpacking to /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/base64id
+306 verbose gentlyRm vacuuming /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/base64id
+307 silly gunzTarPerm modes [ '755', '644' ]
+308 silly cache addNamed cb policyfile@0.0.4
+309 verbose unbuild node_modules/socket.io/node_modules/policyfile
+310 silly cache addNamed cb redis@0.7.3
+311 verbose unbuild node_modules/socket.io/node_modules/redis
+312 silly cache addNamed cb socket.io-client@0.9.16
+313 verbose unbuild node_modules/socket.io/node_modules/socket.io-client
+314 verbose gentlyRm vacuuming /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/policyfile
+315 verbose gentlyRm vacuuming /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/redis
+316 verbose tar unpack /Users/maotingfeng/.npm/policyfile/0.0.4/package.tgz
+317 verbose tar unpacking to /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/policyfile
+318 verbose gentlyRm vacuuming /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/policyfile
+319 verbose gentlyRm vacuuming /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/socket.io-client
+320 verbose tar unpack /Users/maotingfeng/.npm/redis/0.7.3/package.tgz
+321 verbose tar unpacking to /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/redis
+322 verbose gentlyRm vacuuming /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/redis
+323 silly gunzTarPerm modes [ '755', '644' ]
+324 verbose tar unpack /Users/maotingfeng/.npm/socket.io-client/0.9.16/package.tgz
+325 verbose tar unpacking to /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/socket.io-client
+326 verbose gentlyRm vacuuming /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/socket.io-client
+327 silly gunzTarPerm extractEntry package.json
+328 silly gunzTarPerm modes [ '755', '644' ]
+329 silly gunzTarPerm modes [ '755', '644' ]
+330 silly gunzTarPerm extractEntry .npmignore
+331 silly gunzTarPerm extractEntry README.md
+332 silly gunzTarPerm extractEntry .gitignore
+333 silly gunzTarPerm extractEntry package.json
+334 silly gunzTarPerm extractEntry package.json
+335 silly gunzTarPerm extractEntry index.js
+336 silly gunzTarPerm extractEntry LICENSE
+337 silly gunzTarPerm extractEntry .npmignore
+338 silly gunzTarPerm extractEntry README.md
+339 silly gunzTarPerm extractEntry .npmignore
+340 silly gunzTarPerm extractEntry README.md
+341 silly gunzTarPerm extractEntry lib/base64id.js
+342 silly gunzTarPerm extractEntry Makefile
+343 silly gunzTarPerm extractEntry package.json
+344 silly gunzTarPerm extractEntry diff_multi_bench_output.js
+345 silly gunzTarPerm extractEntry bin/builder.js
+346 silly gunzTarPerm extractEntry components/component-bind/index.js
+347 silly gunzTarPerm extractEntry README.md
+348 silly gunzTarPerm extractEntry doc/index.html
+349 silly gunzTarPerm extractEntry generate_commands.js
+350 silly gunzTarPerm extractEntry multi_bench.js
+351 silly gunzTarPerm extractEntry mem.js
+352 silly gunzTarPerm extractEntry components/component-bind/component.json
+353 silly gunzTarPerm extractEntry components/component-emitter/index.js
+354 silly gunzTarPerm extractEntry examples/basic.fallback.js
+355 silly gunzTarPerm extractEntry examples/basic.js
+356 silly gunzTarPerm extractEntry lib/server.js
+357 silly gunzTarPerm extractEntry components/component-emitter/component.json
+358 silly gunzTarPerm extractEntry components/component-json/index.js
+359 silly gunzTarPerm extractEntry tests/unit.test.js
+360 silly gunzTarPerm extractEntry tests/ssl/ssl.crt
+361 info preinstall base64id@0.1.0
+362 silly gunzTarPerm extractEntry test.js
+363 silly install resolved []
+364 verbose about to build /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/base64id
+365 info build /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/base64id
+366 verbose linkStuff [ false,
+366 verbose linkStuff   false,
+366 verbose linkStuff   false,
+366 verbose linkStuff   '/Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules' ]
+367 info linkStuff base64id@0.1.0
+368 verbose linkBins base64id@0.1.0
+369 verbose linkMans base64id@0.1.0
+370 verbose rebuildBundles base64id@0.1.0
+371 info install base64id@0.1.0
+372 info postinstall base64id@0.1.0
+373 silly gunzTarPerm extractEntry tests/ssl/ssl.private.key
+374 verbose unlock done using /Users/maotingfeng/.npm/_locks/base64id-8f98ca48aec07942.lock for /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/base64id
+375 silly gunzTarPerm extractEntry components/component-json/component.json
+376 silly gunzTarPerm extractEntry components/component-json-fallback/index.js
+377 silly gunzTarPerm extractEntry index.js
+378 silly gunzTarPerm extractEntry lib/commands.js
+379 silly gunzTarPerm extractEntry components/component-json-fallback/component.json
+380 silly gunzTarPerm extractEntry components/learnboost-engine.io-client/component.json
+381 silly gunzTarPerm extractEntry lib/queue.js
+382 silly gunzTarPerm extractEntry lib/to_array.js
+383 silly gunzTarPerm extractEntry components/learnboost-engine.io-client/lib/emitter.js
+384 silly gunzTarPerm extractEntry components/learnboost-engine.io-client/lib/index.js
+385 silly gunzTarPerm extractEntry lib/util.js
+386 silly gunzTarPerm extractEntry lib/parser/hiredis.js
+387 silly gunzTarPerm extractEntry components/learnboost-engine.io-client/lib/parser.js
+388 silly gunzTarPerm extractEntry components/learnboost-engine.io-client/lib/socket.js
+389 silly gunzTarPerm extractEntry components/learnboost-engine.io-client/lib/transport.js
+390 silly gunzTarPerm extractEntry components/learnboost-engine.io-client/lib/util.js
+391 silly gunzTarPerm extractEntry components/learnboost-engine.io-client/lib/transports/flashsocket.js
+392 silly gunzTarPerm extractEntry components/learnboost-engine.io-client/lib/transports/index.js
+393 silly gunzTarPerm extractEntry lib/parser/javascript.js
+394 silly gunzTarPerm extractEntry benches/buffer_bench.js
+395 silly gunzTarPerm extractEntry components/learnboost-engine.io-client/lib/transports/polling-jsonp.js
+396 silly gunzTarPerm extractEntry components/learnboost-engine.io-client/lib/transports/polling-xhr.js
+397 silly gunzTarPerm extractEntry components/learnboost-engine.io-client/lib/transports/polling.js
+398 silly gunzTarPerm extractEntry benches/hiredis_parser.js
+399 silly gunzTarPerm extractEntry benches/re_sub_test.js
+400 silly gunzTarPerm extractEntry benches/reconnect_test.js
+401 silly gunzTarPerm extractEntry components/learnboost-engine.io-client/lib/transports/websocket.js
+402 silly gunzTarPerm extractEntry benches/sub_quit_test.js
+403 silly gunzTarPerm extractEntry components/learnboost-socket.io-protocol/index.js
+404 silly gunzTarPerm extractEntry components/learnboost-socket.io-protocol/component.json
+405 silly gunzTarPerm extractEntry components/timoxley-to-array/index.js
+406 silly gunzTarPerm extractEntry components/timoxley-to-array/component.json
+407 silly gunzTarPerm extractEntry benches/stress/codec.js
+408 silly gunzTarPerm extractEntry components/visionmedia-debug/debug.js
+409 silly gunzTarPerm extractEntry components/visionmedia-debug/index.js
+410 silly gunzTarPerm extractEntry components/visionmedia-debug/component.json
+411 silly gunzTarPerm extractEntry dist/socket.io.js
+412 info preinstall policyfile@0.0.4
+413 silly install resolved []
+414 verbose about to build /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/policyfile
+415 info build /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/policyfile
+416 verbose linkStuff [ false,
+416 verbose linkStuff   false,
+416 verbose linkStuff   false,
+416 verbose linkStuff   '/Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules' ]
+417 info linkStuff policyfile@0.0.4
+418 verbose linkBins policyfile@0.0.4
+419 verbose linkMans policyfile@0.0.4
+420 verbose rebuildBundles policyfile@0.0.4
+421 info install policyfile@0.0.4
+422 silly gunzTarPerm extractEntry dist/socket.io.min.js
+423 silly gunzTarPerm extractEntry dist/WebSocketMain.swf
+424 info postinstall policyfile@0.0.4
+425 verbose unlock done using /Users/maotingfeng/.npm/_locks/policyfile-c18f22f5bdede95b.lock for /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/policyfile
+426 silly gunzTarPerm extractEntry benches/stress/pubsub/pub.js
+427 silly gunzTarPerm extractEntry dist/WebSocketMainInsecure.swf
+428 silly gunzTarPerm extractEntry benches/stress/pubsub/server.js
+429 silly gunzTarPerm extractEntry benches/stress/pubsub/run
+430 silly gunzTarPerm extractEntry benches/stress/rpushblpop/pub.js
+431 silly gunzTarPerm extractEntry History.md
+432 silly gunzTarPerm extractEntry lib/events.js
+433 silly gunzTarPerm extractEntry lib/io.js
+434 silly gunzTarPerm extractEntry benches/stress/rpushblpop/server.js
+435 silly gunzTarPerm extractEntry lib/json.js
+436 silly gunzTarPerm extractEntry lib/namespace.js
+437 silly gunzTarPerm extractEntry benches/stress/rpushblpop/run
+438 silly gunzTarPerm extractEntry lib/parser.js
+439 silly gunzTarPerm extractEntry lib/socket.js
+440 silly gunzTarPerm extractEntry benches/stress/speed/speed.js
+441 silly gunzTarPerm extractEntry benches/stress/speed/00
+442 silly gunzTarPerm extractEntry lib/transport.js
+443 silly gunzTarPerm extractEntry lib/util.js
+444 silly gunzTarPerm extractEntry benches/stress/speed/plot
+445 silly gunzTarPerm extractEntry benches/stress/speed/size-rate.png
+446 silly gunzTarPerm extractEntry lib/transports/flashsocket.js
+447 silly gunzTarPerm extractEntry lib/transports/htmlfile.js
+448 silly gunzTarPerm extractEntry examples/auth.js
+449 silly gunzTarPerm extractEntry examples/mget.js
+450 silly gunzTarPerm extractEntry lib/transports/jsonp-polling.js
+451 silly gunzTarPerm extractEntry lib/transports/websocket.js
+452 silly gunzTarPerm extractEntry examples/monitor.js
+453 silly gunzTarPerm extractEntry examples/multi.js
+454 silly gunzTarPerm extractEntry examples/file.js
+455 silly gunzTarPerm extractEntry examples/psubscribe.js
+456 silly gunzTarPerm extractEntry lib/transports/xhr-polling.js
+457 silly gunzTarPerm extractEntry lib/transports/xhr.js
+458 silly gunzTarPerm extractEntry examples/pub_sub.js
+459 silly gunzTarPerm extractEntry examples/simple.js
+460 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/.npmignore
+461 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/README.md
+462 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/swfobject.js
+463 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/web_socket.js
+464 silly gunzTarPerm extractEntry examples/sort.js
+465 silly gunzTarPerm extractEntry examples/subqueries.js
+466 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/build.sh
+467 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies/RFC2817Socket.as
+468 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/gsolo/encryption/MD5.as
+469 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/MozillaRootCertificates.as
+470 silly gunzTarPerm extractEntry examples/extend.js
+471 silly gunzTarPerm extractEntry examples/subquery.js
+472 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509Certificate.as
+473 silly gunzTarPerm extractEntry examples/eval.js
+474 silly gunzTarPerm extractEntry examples/unix_socket.js
+475 silly gunzTarPerm extractEntry examples/backpressure_drain.js
+476 silly gunzTarPerm extractEntry examples/web_server.js
+477 silly gunzTarPerm extractEntry examples/multi2.js
+478 silly gunzTarPerm extractEntry changelog.md
+479 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509CertificateCollection.as
+480 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/Crypto.as
+481 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/HMAC.as
+482 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHash.as
+483 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHMAC.as
+484 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MAC.as
+485 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD2.as
+486 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD5.as
+487 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA1.as
+488 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA224.as
+489 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA256.as
+490 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHABase.as
+491 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/ARC4.as
+492 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/IPRNG.as
+493 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/Random.as
+494 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/TLSPRF.as
+495 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa/RSAKey.as
+496 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IPad.as
+497 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/AESKey.as
+498 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/BlowFishKey.as
+499 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CBCMode.as
+500 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFB8Mode.as
+501 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFBMode.as
+502 info preinstall redis@0.7.3
+503 silly install resolved []
+504 verbose about to build /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/redis
+505 info build /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/redis
+506 verbose linkStuff [ false,
+506 verbose linkStuff   false,
+506 verbose linkStuff   false,
+506 verbose linkStuff   '/Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules' ]
+507 info linkStuff redis@0.7.3
+508 verbose linkBins redis@0.7.3
+509 verbose linkMans redis@0.7.3
+510 verbose rebuildBundles redis@0.7.3
+511 info install redis@0.7.3
+512 info postinstall redis@0.7.3
+513 verbose unlock done using /Users/maotingfeng/.npm/_locks/redis-5f11dafc2d04256b.lock for /Users/maotingfeng/node/chatrooms/node_modules/socket.io/node_modules/redis
+514 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CTRMode.as
+515 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/DESKey.as
+516 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/dump.txt
+517 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ECBMode.as
+518 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ICipher.as
+519 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IMode.as
+520 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/aeskey.pl
+521 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IStreamCipher.as
+522 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ISymmetricKey.as
+523 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IVMode.as
+524 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/NullPad.as
+525 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/OFBMode.as
+526 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/PKCS5.as
+527 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SimpleIVMode.as
+528 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SSLPad.as
+529 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TLSPad.as
+530 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TripleDESKey.as
+531 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/XTeaKey.as
+532 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ITestHarness.as
+533 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/AESKeyTest.as
+534 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BigIntegerTest.as
+535 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BlowFishKeyTest.as
+536 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CBCModeTest.as
+537 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFB8ModeTest.as
+538 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFBModeTest.as
+539 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CTRModeTest.as
+540 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/DESKeyTest.as
+541 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ECBModeTest.as
+542 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/HMACTest.as
+543 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ARC4Test.as
+544 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD2Test.as
+545 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD5Test.as
+546 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/OFBModeTest.as
+547 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/RSAKeyTest.as
+548 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA1Test.as
+549 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA224Test.as
+550 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA256Test.as
+551 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TestCase.as
+552 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TLSPRFTest.as
+553 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TripleDESKeyTest.as
+554 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/XTeaKeyTest.as
+555 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConfig.as
+556 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/BulkCiphers.as
+557 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/IConnectionState.as
+558 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/ISecurityParameters.as
+559 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/KeyExchanges.as
+560 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/MACs.as
+561 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLConnectionState.as
+562 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLEvent.as
+563 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLSecurityParameters.as
+564 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/CipherSuites.as
+565 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConnectionState.as
+566 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEngine.as
+567 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSError.as
+568 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEvent.as
+569 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSecurityParameters.as
+570 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocket.as
+571 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocketEvent.as
+572 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSTest.as
+573 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/math/BarrettReduction.as
+574 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/math/bi_internal.as
+575 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/math/BigInteger.as
+576 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/math/ClassicReduction.as
+577 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/math/IReduction.as
+578 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/math/MontgomeryReduction.as
+579 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/math/NullReduction.as
+580 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/ArrayUtil.as
+581 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as
+582 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PEM.as
+583 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as
+584 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/IAsn1Type.as
+585 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Integer.as
+586 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ObjectIdentifier.as
+587 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/OID.as
+588 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/DER.as
+589 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PrintableString.as
+590 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Sequence.as
+591 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Set.as
+592 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Type.as
+593 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/UTCTime.as
+594 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/Hex.as
+595 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/com/hurlant/util/Memory.as
+596 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/IWebSocketLogger.as
+597 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/WebSocket.as
+598 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/WebSocketEvent.as
+599 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/WebSocketMain.as
+600 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/flash-src/WebSocketMainInsecure.as
+601 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/sample.html
+602 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/WebSocketMain.swf
+603 silly gunzTarPerm extractEntry lib/vendor/web-socket-js/WebSocketMainInsecure.zip
+604 silly gunzTarPerm extractEntry Makefile
+605 silly gunzTarPerm extractEntry test/events.test.js
+606 silly gunzTarPerm extractEntry test/io.test.js
+607 silly gunzTarPerm extractEntry test/parser.test.js
+608 silly gunzTarPerm extractEntry test/socket.test.js
+609 silly gunzTarPerm extractEntry test/util.test.js
+610 silly gunzTarPerm extractEntry test/worker.js
+611 silly gunzTarPerm extractEntry test/node/builder.common.js
+612 silly gunzTarPerm extractEntry test/node/builder.test.js
+613 verbose stack Error: read ECONNRESET
+613 verbose stack     at exports._errnoException (util.js:746:11)
+613 verbose stack     at TCP.onread (net.js:559:26)
+614 verbose cwd /Users/maotingfeng/node/chatrooms
+615 error Darwin 15.3.0
+616 error argv "node" "/usr/local/bin/npm" "install"
+617 error node v0.12.7
+618 error npm  v2.5.1
+619 error code ECONNRESET
+620 error errno ECONNRESET
+621 error syscall read
+622 error network read ECONNRESET
+622 error network This is most likely not a problem with npm itself
+622 error network and is related to network connectivity.
+622 error network In most cases you are behind a proxy or have bad network settings.
+622 error network
+622 error network If you are behind a proxy, please make sure that the
+622 error network 'proxy' config is set properly.  See: 'npm help config'
+623 verbose exit [ 1, true ]
