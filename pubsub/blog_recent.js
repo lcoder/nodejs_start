@@ -13,6 +13,8 @@ channel.on('join', function(id, client) {
         }
     }
     this.on('broadcast', this.subscriptions[id] );
+    var current = this.listeners('broadcast').length - 1 ;
+    client.write( '你好,当前有' + current + '个在线用户!\n' ) ;
 });
 
 channel.on( 'leave' , function( id ){
