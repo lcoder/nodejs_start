@@ -1,48 +1,20 @@
-/**
- *
- * @authors supmain (mtingfeng@gmail.com)
- * @date    2016-04-16 16:26:27
- * @version $Id$
- */
-var http = require('http') ;
-var url = require('url') ;
-var items = [] ;
+var http = require('http') ,
+    parse = require('url').parse ,
+    join = require('path').join ,
+    fs = require('fs') ;
+var root = __dirname ;
 
 var server = http.createServer( function( req , res ){
-    switch( req.method ) {
-        case 'POST':
-            var item = '';
-            req.setEncoding('utf8');
-            req.on('data',function(chunk){
-                item += chunk ;
-            });
-            req.on('end',function(){
-                items.push( item ) ;
-                res.end( 'OK\n' );
-            });
-            break;
-        case 'GET':
-            var body = items.map( function( item , i ){
-                return i + ') ' + item ;
-            } ).join( '\n' ) ;
-            res.setHeader( 'Content-Length' , Buffer.byteLength( body ) ) ;
-            res.setHeader( 'Content-Type' , 'text/plain;charset="utf-8"' ) ;
-            res.end( body ) ;
-            break;
-        case 'DELETE':
-            var path = url.parse( req.url ).pathname ;
-            var i = parseInt( path.slice(1) , 10 ) ;
-            if( isNaN( i ) ){
-                res.statusCode = 400;
-                res.end('非法请求') ;
-            }else if( !items[i] ){
-                res.statusCode = 404 ;
-                res.end('没有找到item');
-            }else{
-                items.splice( i , 1 ) ;
-                res.end('OK\n') ;
-            }
-            break;
-    }
+    var url = parse( req.url ) ;
+    var path = join( root , url.pathname ) ;
+    var stream = fs.createReadStream( path ) ;
+    stream.on( 'data' , function( chunk ){
+        res.write( chunk ) ;
+    } ) ;
+    stream.on( 'end' , function(){
+        res.end() ;
+    } ) ;
+
 } ) ;
+
 server.listen( 3000 ) ;
