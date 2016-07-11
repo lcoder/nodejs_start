@@ -1,55 +1,51 @@
-var fs = require( 'fs' ) ;
-var path = require( 'path' ) ;
-var args = process.argv.splice( 2 ) ;
-var command = args.shift() ;
-var taskDescription = args.join( ' ' ) ;
-var file = path.join( process.cwd() , '/.tasks' ) ;
+var connect = require('connect') ;
+var app = connect() ;
 
-switch( command ) {
-    case 'list':
-        listTasks( file ) ;
-        break;
-    case 'add':
-        addTask( file , taskDescription ) ;
-        break;
-    default:
-        console.log( '控制台的正确使用方法' + process.argv[0] );
-        break;
+// 访问
+// curl --user maotingfeng:123 localhost:3000/admin/users
+function logger( req , res , next ){
+    console.log( "%s %s" , req.method , req.url ) ;
+    next() ;
 }
 
-function loadOrInitializeTaskArray( file , cb ){
-    fs.exists( file , function( exists ){
-        var tasks = [] ;
-        if( exists ){
-            fs.readFile( file , 'utf8' , function( err , data ){
-                if( err ) throw err ;
-                var data = data.toString() ;
-                var tasks = JSON.parse( data || '[]' ) ;
-                cb( tasks ) ;
-            } ) ;
-        }else{
-            cb( [] ) ;
-        }
-    } ) ;
-}
-function storeTasks( file , tasks ){
-    fs.writeFile( file , JSON.stringify( tasks ) , function( err ){
-        if( err ) throw err ;
-        console.log('保存成功！');
-    } ) ;
+function hello( req , res , next ){
+    res.setHeader( 'Content-Type' , 'text/plain' ) ;
+    res.end( 'hello world' ) ;
 }
 
-function listTasks( file ){
-    loadOrInitializeTaskArray( file , function( tasks ){
-        for( var i in tasks ){
-            console.log( tasks[ i ] ) ;
-        }
-    } ) ;
+function restrict( req , res , next ){
+    var authorization = req.headers.authorization ;
+
+    if( !authorization ) { return next( new Error('未认证') ) ; }
+
+    var parts = authorization.split( ' ' ) ,
+        scheme = parts[0] ,
+        auth = new Buffer( parts[1] , 'base64' ).toString().split( ':' ) ,
+        user = auth[0] ,
+        pass = auth[1] ;
+    console.log( new Buffer( parts[1] , 'base64' ).toString() );
+    if( user == 'maotingfeng' ){
+        next()
+    }else{
+        next( new Error('用户名错误') ) ;
+    }
+
 }
 
-function addTask( file , taskDescription ){
-    loadOrInitializeTaskArray( file , function( tasks ){
-        tasks.push( taskDescription ) ;
-        storeTasks( file , tasks ) ;
-    } )
+function admin( req , res , next ){
+    switch(req.url) {
+        case '/':
+            res.end( '请访问/users' ) ;
+            break;
+        case '/users':
+            res.setHeader( 'Content-Type' , 'application/json' ) ;
+            res.end( JSON.stringify( [ 'maotingfeng' , 'wangjunhui' ] ) ) ;
+            break;
+    }
 }
+
+app.use( logger )
+    .use( '/admin' , restrict )
+    .use( '/admin' , admin )
+    .use( hello )
+    .listen( 3000 ) ;
