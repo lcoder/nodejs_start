@@ -3,12 +3,16 @@ var connect = require('connect') ,
 
 var app = connect() ;
 
+function logger( format ){
+    var regexp = /:(\w+)/ ;
+    return function logger( req , res , next ){
+        var str = format.replace( regexp , function( match , property ){
+            console.log( arguments );
+            return req[ property ] ;
+        } ) ;
+    }
+}
 
-app.use( cookieParser('tobi is a cool ferret') )
-    .use( function(req,res) {
-        console.log( req.cookies )
-        console.log( req.signedCookies );
-        res.setHeader( 'Set-Cookie' , 'name=maotingfeng' ) ;
-        res.end('hello world\n') ;
-    } )
+
+app.use( logger( ':method :url' ) )
     .listen(3000);
